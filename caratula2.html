@@ -1,0 +1,159 @@
+<html>
+<head><title>Caratula2</title></head> 
+<body ; bgcolor="">
+
+<center><table border="1" width="1000" heigth="80">
+<tr>
+<td colspan="4"><center><img src="21.png" width="1000" heigth="80"></center></td>
+</tr>
+<tr>
+<td colspan="4"><center><img src="mill.png" width="1000" heigth="80"></center>
+<a href="caratula2.html"><center><img src="REGRESAR.png" width="100" heigth="80"></center></td>
+</tr>
+
+<td width="90";height="3"><b><i><font color="#1C17DB"><a href="CECYTEM.html"><img src="CECYTEM.png" widht="170" height="80">
+<a href="MISION.html"><img src="MISION.png" widht="170" height="80">
+<a href="VISION.html"><img src="VISION.png" widht="150" height="50">
+<a href="HISTORIA.html"><img src="HISTORIA.png" widht="150" height="50">
+<a href="CROQUIS.html"><img src="CROQUIS.png" widht="150" height="80"><br>
+<a href="ORNNIGRAMA.html"><img src="ORNNIGRAMA.png" widht="150" height="80">
+
+</font color="#1C17DB"></br></i></b></td> 
+<h><td rowspan="4" ; height="400"></a></a></a><center></h3>
+
+<h3>Colegios de estudios cientificos y tecnologicos de el estado de mexico<br> plantel ixtlahuaca</br></h3>
+<h3>Portafolio de Evidencias</h3>
+<h3>Nombre del Sbmodulo 2:Desarrolla Aplicasiones que se ejecutan en el cliente</h3>
+<h3>Nombre del Sbmodulo 3:Desarrolla Aplicasiones que al servidor</h3>
+<h3>Elavorado:Noe cruz guadalupe</h3>
+<h3>Grupo:402</h3>
+<h3>Numero de lista:7</h3>
+<h3>Ciclo Escolar 2024-2024</h3>
+<h3>Fecha:Martes 6 de marzo del 2024</h3>
+</center></td>
+
+<td width="200"> <font color="black" size="4" face="tahoma">
+ <center> Calendario...</center>
+<script type="text/javascript">
+    function greeting()
+{
+   var today = new Date();
+   var hrs = today.getHours();
+   document.writeln("<CENTER>");
+  // document.write("<H1>Buen");
+   if (hrs < 6)
+      document.write("");
+   else if (hrs < 12)
+      document.write("");
+   else if (hrs <= 18)
+      document.write("");
+   else
+      document.write("");
+   document.writeln("</H1>");
+   //document.write("Ingresaste a esta pagina el ");
+   dayStr = today.toLocaleString();
+   //document.write(dayStr);
+   document.writeln("</CENTER>");
+}
+function montharr(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11)
+{
+   this[0] = m0;
+   this[1] = m1;
+   this[2] = m2;
+   this[3] = m3;
+   this[4] = m4;
+   this[5] = m5;
+   this[6] = m6;
+   this[7] = m7;
+   this[8] = m8;
+   this[9] = m9;
+   this[10] = m10;
+   this[11] = m11;
+}
+function calendar()
+{
+   var monthNames = "EneFebMarAbrMayJunJulAgoSepOctNovDic";
+   var today = new Date();
+   var thisDay;
+   var monthDays = new montharr(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+   year = today.getYear() ;
+   thisDay = today.getDate();   
+   if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+   monthDays[1] = 29;
+   nDays = monthDays[today.getMonth()];
+   firstDay = today;
+   firstDay.setDate(1); // works fine for most systems
+   testMe = firstDay.getDate();
+   if (testMe == 2)
+   firstDay.setDate(0);    
+   startDay = firstDay.getDay();
+   document.writeln("<CENTER>");
+   document.write("<TABLE BORDER>");
+   document.write("<TR><TH COLSPAN=10>");
+   document.write(monthNames.substring(today.getMonth() * 3,
+   (today.getMonth() + 1) * 3));
+   document.write(". ");
+   document.write(year);
+   document.write("<TR><TH>D<TH>L<TH>M<TH>M<TH>J<TH>V<TH>S");
+   document.write("<TR>");
+   column = 0;
+   for (i=0; i<startDay; i++)
+   {
+   document.write("<TD>");
+   column++;
+   }
+   for (i=1; i<=nDays; i++)
+   {
+   document.write("<TD>");
+   if (i == thisDay)
+   document.write("<FONT COLOR=\"#FF0000\"><b>")
+   document.write(i);
+   if (i == thisDay)
+   document.write("</b></FONT>")
+   column++;
+   if (column == 7)
+   {
+   document.write("<TR>"); 
+   column = 0;
+   }
+   }
+   document.write("</TABLE>");
+   document.writeln("</CENTER>");
+}
+   greeting();
+   document.write("</br>");
+   calendar();
+   document.write("");
+   </script>
+
+
+<script>
+function usrpas(){
+if(document.form1.txt.value=="caballo" && document.form1.password.value=="cielo")
+{window.location="menu.html"}
+else {alert("Ingreso denegado, vuelva a intentarlo mas tarde")}
+}
+document.oncontextmenu=new Fuction("return false");
+
+</script>
+
+<form name="form1">
+<center><strong>Usuario</center></strong><input type="text" name="txt" placeholder="usuario"><br></br>
+<center><strong>Contraseña</center></strong><input type="password" name="password" placeholder="Contraseña"><br></br>
+<input type="button" value="Iniciar" onclick="usrpas()">
+<button onclick="limpiarCeldas()">Limpiar</button>
+</td>
+
+
+</tr>
+</table>
+<footer>
+<p> </p>
+</footer>
+</body>
+</html>
+
+<center><footer><font size="2">Nos asigna de una pajina a otra ya que nos ayuda a saber qu es lo que temos que saber sobre la pajina wub </font size></center></footer>
+
+
+
